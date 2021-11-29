@@ -3,34 +3,34 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "SkiPatrolSite/version.json": "c3e29d713b2e928a5abd404370efa5d4",
-"SkiPatrolSite/index.html": "0365844d12581970a49fa7fec8397ce1",
-"SkiPatrolSite//": "0365844d12581970a49fa7fec8397ce1",
-"SkiPatrolSite/main.dart.js": "fda52ea637d213d120ad4592fff9dafb",
-"SkiPatrolSite/favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"SkiPatrolSite/icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"SkiPatrolSite/icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"SkiPatrolSite/icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"SkiPatrolSite/icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"SkiPatrolSite/manifest.json": "61038a0e00fc44fa357db2d9b433e3ea",
-"SkiPatrolSite/assets/AssetManifest.json": "79b316080ac9edd95fbd55763989a636",
-"SkiPatrolSite/assets/NOTICES": "6dec2b1d3729c742fbc9c5b0a8084a87",
-"SkiPatrolSite/assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"SkiPatrolSite/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"SkiPatrolSite/assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"SkiPatrolSite/assets/assets/language.svg": "ee6c683afb176615ca222671816294f0",
-"SkiPatrolSite/assets/assets/medal.svg": "f6102c934df80cae15e561c29ac93eef"
+  "version.json": "c3e29d713b2e928a5abd404370efa5d4",
+"index.html": "0365844d12581970a49fa7fec8397ce1",
+"/": "0365844d12581970a49fa7fec8397ce1",
+"main.dart.js": "fda52ea637d213d120ad4592fff9dafb",
+"favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"manifest.json": "61038a0e00fc44fa357db2d9b433e3ea",
+"assets/AssetManifest.json": "79b316080ac9edd95fbd55763989a636",
+"assets/NOTICES": "6dec2b1d3729c742fbc9c5b0a8084a87",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/assets/language.svg": "ee6c683afb176615ca222671816294f0",
+"assets/assets/medal.svg": "f6102c934df80cae15e561c29ac93eef"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "/SkiPatrolSite/",
-"SkiPatrolSite/main.dart.js",
-"SkiPatrolSite/index.html",
-"SkiPatrolSite/assets/NOTICES",
-"SkiPatrolSite/assets/AssetManifest.json",
-"SkiPatrolSite/assets/FontManifest.json"];
+  "/",
+"main.dart.js",
+"index.html",
+"assets/NOTICES",
+"assets/AssetManifest.json",
+"assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
